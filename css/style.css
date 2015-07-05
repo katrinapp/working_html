@@ -1,0 +1,803 @@
+/* © 2015 Nascent Athlete LLC / All Rights Reserved */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,300italic,700);
+
+body {
+	color: #6A7272;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 14px;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	padding: 10px 0;
+}
+a {
+	color: #6A7272;
+	text-decoration: none;
+}
+a.sport {
+	color: #fff;
+}
+a.back {
+	color: #EF6F6F;
+}
+a.modal, a.reg {
+	color: #fff;
+}
+.back a:active {
+	color: #C14F4F;
+	background-color: #B22E2F;
+}
+.active a:active {
+	background-color: #E1E7E8;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+.registration-logo {
+	text-align: center;
+	padding-top: 50px;
+}
+.logo {
+	padding-bottom: 20px;
+}
+
+/* HEADINGS 
+ * ======== */
+h1.title-name {
+	font-weight: 300;
+	font-size: 20px;
+}
+h1.head-start {
+	font-weight: 300;
+	font-size: 18px;
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+}
+h2.sub-title-name {
+	font-weight: 300;
+	font-size: 16px;
+	padding-top: 20px;
+}
+h2.member-name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 35px;
+	color: #fff;
+	padding: 70px 0px 0px;
+}
+h2.tos {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+h3.error {
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 18px;
+	color: #fff;
+	padding: 10px;
+}
+h3.state-city {
+	font-weight: 300;
+	font-size: 11px;
+	color: #fff;
+	line-height: 10px;
+	margin-bottom: 0px;
+}
+h3.sub-gray {
+	color: #fff;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 25px;
+	padding-left: 20px;
+}
+h3.sub-red {
+	color: #fff;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 25px;
+	padding-left: 20px;
+}
+h4.num {
+	font-weight: 700;
+	font-size: 20px;
+}
+small {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 17px;
+}
+h4.privacy {
+	font-weight: 700;
+	line-height: 20px;
+}
+
+/* REGISTRATION 
+ * ============ */
+.registration {
+	color: #fff;
+	width: 100%;
+}
+.start {
+	background-color: #932127;
+	top: middle;
+}
+ol.reg {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.done-reg {
+	background-color: #14afc8;
+	margin-top: 40px;
+	padding: 10px 0;
+	text-align: center;
+}
+
+/*** GRID
+ *** ======= */
+.one-half {
+	width: 33%;
+	margin: 20px 10px;
+	clear: both;
+	text-align: left;
+}
+img {
+	width: auto;
+}
+img.sport {
+	padding-bottom: 30px;
+	width: 40%;
+}
+
+
+/*** PAGE TITLE 
+ *** =========== */
+.main-top {
+	background-color: #B22E2F;
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	margin-bottom: 20px;
+	z-index: 9999;
+}
+.secondary-top {
+	background-color: #B22E2F;
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	margin-bottom: 10px;
+	height: 50px;
+	z-index: 9999;
+}
+.page-title {
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px 0px 25px;
+}
+.sub-title {
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+.sub-title-gray {
+	margin: 50px auto 10px;
+	padding: 0;
+	height: 30px;
+	background-color: #404647;
+}
+.sub-title-red {
+	margin: 50px auto 10px;
+	padding: 0;
+	height: 30px;
+	background-color: #991A21;
+}
+.sub-title-white {
+	margin: 50px auto 10px;
+	padding: 0;
+	height: 30px;
+	color: #404647;
+	border-bottom: 1px solid #E6E8E8;
+}
+.title-right {
+	float: right;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 300;
+	padding-right: 10px;
+}
+.back {
+	text-align: left;
+	margin-top: -19px;
+	padding-left: 5px;
+}
+.done {
+	text-align: right;
+	margin-top: -19px;
+	padding-right: 20px;
+}
+
+/* NAVIGATION 
+ * =========== */
+.reg-menu {
+	padding-top: 126px;
+	padding-left: 0px;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+}
+.secondary-scrns {
+	padding: 45px 0px;
+}
+.profile-list, athlete-list {
+	padding-bottom: 20px;
+}
+.sport-played {
+	margin-top: 50px;
+}
+.sport-summary-list {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #E6E8E8;
+}
+ul.secondary {
+	list-style: none;
+	font-size: 18px;
+	padding-left: 0px;
+}
+ul.reg-menu {
+	list-style: none;
+	font-size: 24px;
+}
+li.reg {
+	font-weight: 300;
+	line-height: 45px;
+	padding: 15px 10px;
+	border-bottom: 1px solid #E6E8E8;
+}
+ul.complete-reg {
+	list-style: none;
+	padding: 150px 20px 0px;
+}
+li.congrats {
+	font-weight: 700;
+	font-size: 24px;
+}
+li.complete-reg-mssg {
+	line-height: 22px;
+	padding-top: 13px;	
+}
+li.complete-reg-login {
+	border-top: 1px solid #E6E8E8;
+	border-bottom: 1px solid #E6E8E8;
+	margin-top: 85px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 70px;
+}
+ul.login {
+	list-style: none;
+	padding: 20px 20px;
+}
+li.login-field {
+	border-bottom: 1px solid #E6E8E8;
+}
+li.login-field-error {
+	border-bottom: 3px solid #661901;
+}
+ul.forgot-password-scrn {
+	list-style: none;
+	padding: 60px 0px;
+}
+li.forgot-pwd-fields {
+	border-bottom: 1px solid #E6E8E8;
+}
+ul.profile-main {
+	padding-top: 187px;
+	padding-left: 0px;
+}
+li.nav {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 35px;
+	padding: 15px 10px;
+	border-bottom: 1px solid #E6E8E8;
+}
+ul.sport-list {
+	list-style: none;
+	padding-left: 20px;
+}
+li.sport {
+	   font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+    color: #6A7272;
+    border-bottom: 1px dashed #E3E7E8;
+    padding-right: 15px;
+}
+li.sport-option-active {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 55px;
+	color: #6A7272;
+	padding-left: 20px;
+	background-color: #E1E7E8;
+}
+ul.profile-sub {
+	list-style: none;
+	border-top: 1px solid #E6E8E8;
+}
+ul.event-list {
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+li.season {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 27px;
+	color: #6A7272;
+	border-bottom: 1px dashed #E3E7E8;
+}
+li.event-rating {
+	font-weight: 700;
+	font-size: 10px;
+	color: #6A7272;
+	line-height: 30px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #E3E7E8;
+}
+li.perf-rating {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 35px;
+	color: #6A7272;
+	border-bottom: 1px dashed #E3E7E8;
+}
+ul.list-athletes {
+	list-style: none;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+li.athlete {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #6A7272;
+	border-bottom: 1px dashed #E3E7E8;
+}
+li.sport-level {
+	font-weight: 700;
+	font-size: 10px;
+	color: #6A7272;
+	padding: 15px 0px 0px;
+	text-transform: uppercase;
+}
+li.level {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+	color: #6A7272;
+	border-bottom: 1px solid #E3E7E8;
+	padding-bottom: 10px;
+}
+
+/*** TABLES 
+ *** ====== */
+table.member-type {
+	padding-top: 60px;
+	margin-bottom: 10px;
+	font-weight: 300;
+	font-size: 24px;
+	margin: 0 auto;
+}
+table.info-fields {
+	list-style: none;
+	padding-top: 60px;
+	padding-left: 0px;
+	width: 100%;
+}
+table.info-tos {
+	margin-left: 20px;
+	padding-top: 5px;
+	width: 50%;
+}
+td.member-athlete {
+	border-right: 1px solid #E6E8E8;
+	border-bottom: 1px solid #E6E8E8;
+	padding: 80px 40px;
+}
+td.member-parent {
+	border-bottom: 1px solid #E6E8E8;
+	padding: 80px 40px;
+}
+td.member-coach {
+	border-right: 1px solid #E6E8E8;
+	padding: 80px 40px;
+}
+td.member-trainer {
+	padding: 80px 40px;
+}
+td.field-name {
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 10px;
+	padding: 12px 20px;
+	border-bottom: 1px solid #E6E8E8;
+}
+td.field {
+	border-bottom: 1px solid #E6E8E8;
+}
+.input-field {
+	padding: 12px 20px;
+	border-bottom: 1px solid #E6E8E8;
+}
+td.field-tos {
+	padding: 0px 20px;
+	font-weight: 300;
+	font-size: 13px;
+}
+td.field-tos-accept{
+	padding: 5px 0px;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+/*** FIELDS 
+ *** ======= */
+input {
+	border: 0;
+}
+input.info {
+	width: 100%;
+	height: 30px;
+	font-weight:300;
+	font-size: 16px;
+	color: #404647;
+	float: right;
+	padding-right: 20px;
+}
+input.account {
+	width: 100%;
+	height:30px;
+	font-weight:300;
+	font-size: 16px;
+	color: #404647;
+	float: right;
+	padding-right: 20px;
+}
+input.login {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 50px;
+	color: #404647;
+}
+input.forgot-password {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #404647;
+	width: 100%;
+	background-color: transparent;
+	padding-top: 39px;
+}
+input.played {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 55px;
+	color: #404647;
+	width: 100%;
+	background-color: transparent;
+}
+placeholder {
+	color: #404647;
+}
+button {
+	background-color: #fff;
+	border: 0;
+	width: 100%;
+	height:30px;
+	font-weight:300;
+	font-size: 16px;
+	color: #404647;
+	text-align: left;
+}
+
+/*** ERRORS 
+ *** ====== */
+.terms {
+	padding: 60px 20px;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+	color: #404647;
+}
+.password-message {
+	padding-top: 60px;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+	color: #404647;
+	padding-left: 20px;
+}
+.login-logo {
+	padding-top: 20px;
+	text-align: center; 
+}
+.login-logo-errorpg {
+	padding-top: 100px;
+	text-align: center;
+}
+.forgot-password {
+	font-weight: 100;
+	margin-top: -16px;
+	font-size: 12px;
+	padding-left: 20px;
+}
+.terms-conditions {
+	font-size: 9px;
+	font-weight: 300;
+	color: #827F7D;
+	text-left: left;
+	bottom: 0px;
+	left: 10px;
+	margin-bottom: 10px;
+} 
+.terms-conditions-link {
+	font-size: 9px;
+	font-weight: 300;
+	color: #827F7D;
+	text-left: left;
+	bottom: 0px;
+	left: 10px;
+	margin-bottom: 10px;
+	position: fixed;
+}
+.member-error {
+	padding: 0px;
+	height: auto;
+	background-color: #661901;
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	margin-bottom: 10px;
+	z-index: 9999;
+}
+
+
+
+/*** BUTTONS 
+ *** ======== */
+.btn-login {
+	font-size: 24px;
+	text-align: center;
+	line-height: 45px;
+	border-top: 1px solid #E6E8E8;
+	border-bottom: 1px solid #E6E8E8;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+ul.btns {
+	text-align: center;
+	list-style: none;
+}
+.btn-add {
+	background-color: #18B0C9;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 15px 0px;
+	font-weight: 700;
+	font-size: 20px;
+}
+.btn-delete {
+	background-color: #F76A00;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 15px 0px;
+	font-weight: 700;
+	font-size: 20px;
+}
+.btn-default {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 15px 0px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #6A7272;
+}
+.swipe-delete {
+	background-color: #F76A00;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #FFF;
+	float: right;
+	padding: 0px 25px;
+	height: 38px;
+	margin-top: -10px;
+	line-height: 36px;
+}
+.grid-sports {
+	margin: 20px;
+}
+
+/*** ICONS 
+ *** ====== */
+.icon-arrow-right-profile {
+	background: url(../assets/sprite-icons.png) -7px -40px;
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin-top: 7px;
+}
+.icon-arrow-right {
+	background: url(../assets/sprite-icons.png) -59px -40px;
+	float: right;
+	width: 30px;
+	height: 30px;
+}
+.icon-arrow-left {
+	background: url(../assets/sprite-icons.png) -178px -16px;
+	width: 50px;
+	height: 30px;
+	padding-right: 13px;
+}
+.icon-add {
+	background: transparent url("../assets/sprite-icons.png") repeat scroll -114px -42px;
+	width: 30px;
+	height: 30px;
+	float: right;
+	padding-right: 2px;
+}
+.icon-check-blue {
+	background: transparent url("../assets/sprite-icons.png") repeat scroll -14px 4px;
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin: 3px 13px;
+}
+.icon-check-green {
+	background: transparent url("../assets/sprite-icons.png") repeat scroll -108px -5px;
+	width: 50px;
+	height: 35px;
+	float: right;
+	margin-top: -8px;
+}
+.icon-error {
+	background: transparent url("../assets/sprite-icons.png") repeat scroll -59px 1px;
+	width: 25px;
+	height: 35px;
+	float: left;
+	margin: 10px;
+}
+.icon-athlete {
+	background: transparent url("../assets/sprite-reg-icons.png") repeat scroll -9px -15px;
+	width: 70px;
+	height: 70px;
+}
+.icon-parent {
+	background: transparent url("../assets/sprite-reg-icons.png") repeat scroll -57px 1px;
+	width: 30px;
+	height: 35px;
+}
+.icon-coach {
+	background: transparent url("../assets/sprite-reg-icons.png") repeat scroll -57px 1px;
+	width: 30px;
+	height: 35px;
+}
+.icon-trainer {
+	background: transparent url("../assets/sprite-reg-icons.png") repeat scroll -57px 1px;
+	width: 30px;
+	height: 35px;
+}
+.icon-footer-profile {
+	backgrond-position:;
+}
+.icon-footer-stats {
+	backgrond-position:;
+}
+.icon-footer-network {
+	backgrond-position:;
+}
+.icon-footer-adviceline {
+	backgrond-position:;
+}
+.icon-footer-profile-active {
+	backgrond-position:;
+}
+.icon-footer-stats-active {
+	backgrond-position:;
+}
+.icon-footer-network-active {
+	backgrond-position:;
+}
+.icon-footer-adviceline-active {
+	backgrond-position:;
+}
+.icon-sub-menu {
+	background: transparent url("../assets/sprite-icons.png") repeat scroll -171px -55px;
+	width: 30px;
+	height: 30px;
+	float: right;
+	padding-right: 15px;
+}
+
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+
+/*** FOOTER 
+ *** ======= */
+.footer {
+	background-color: #EFF2F4;
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	clear: both;
+}
+ul.dashboard-nav {
+	list-style: none;
+	padding: 10px 0px;
+	text-align: center;
+}
+li.dash-links {
+	display: inline;
+	font-weight: 300;
+	font-size: 11px;
+	padding: 0px 13px;
+	cursor: pointer;
+}
+li.dash-links-active {
+	color: #18B0C9;
+	display: inline;
+	font-weight: 300;
+	font-size: 11px;
+	padding: 0px 13px;
+	cursor: pointer;
+}
+.copyright {
+	font-weight: 300;
+	font-size: 8px;
+	bottom: 0px;
+	position: fixed;
+	padding: 10px;
+	right: 0;
+}
+
+/*** =========	
+	 DEV NOTES 
+ *** ========== */
+.dev-notes {
+	background: rgba(0, 0, 0, .75);
+	padding: 15px;
+	color: #fff;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+
+}
